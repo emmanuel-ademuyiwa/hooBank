@@ -1,0 +1,39 @@
+.custom--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 64px;
+
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  border-radius: 10px;
+  border: none;
+
+  &:hover {
+    background-color: #9dedf0;
+  }
+
+  h1 {
+    width: 104px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: $black;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .custom--button {
+    min-width: 151px;
+  }
+}

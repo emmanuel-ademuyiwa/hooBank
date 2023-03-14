@@ -1,15 +1,31 @@
 @import "../variables.scss";
 
 .nav--bar {
+  width: 100%;
   padding: 24px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
+  .logo--nav--container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo--nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .logo--container {
-    width: 124px;
-    height: 32;
+    min-width: 124px;
+    min-height: 32;
+    max-width: 124px;
+    max-height: 32;
 
     img {
       width: 100%;
@@ -33,6 +49,51 @@
 
       .active--link {
         color: $white;
+      }
+    }
+  }
+
+  .custom--button {
+    display: none;
+  }
+
+  .mobile--menu {
+    display: none;
+  }
+}
+
+@media (max-width: 912px) {
+  .nav--bar {
+    .link--container {
+      ul {
+        gap: 30px !important;
+      }
+    }
+
+    .custom--button {
+      display: flex;
+      margin: 0 0 0 32px;
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .nav--bar {
+    .link--container {
+      display: none;
+    }
+
+    .logo--nav--container {
+      width: 50%;
+    }
+
+    .mobile--menu {
+      width: 28px;
+      height: 28px;
+      display: block;
+
+      img {
+        width: 100%;
       }
     }
   }
