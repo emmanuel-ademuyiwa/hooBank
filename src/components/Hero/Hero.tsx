@@ -39,6 +39,7 @@ const Hero = () => {
         </p>
       </div>
 
+      <div className="blur--bg--left"></div>
       <div className="blur--bg"></div>
       <div className="blur--bg1"></div>
       <div className="blur--bg2"></div>

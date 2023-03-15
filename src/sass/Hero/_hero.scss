@@ -83,6 +83,19 @@
     }
   }
 
+  .blur--bg--left {
+    position: absolute;
+    width: 200px;
+    height: 450px;
+    left: -150px;
+    top: 100px;
+
+    background: #ffffff;
+    opacity: 0.15;
+    filter: blur(100px);
+    border-radius: 634px;
+  }
+
   .blur--bg {
     position: absolute;
     width: 900px;
@@ -103,7 +116,7 @@
     position: absolute;
     width: 700px;
     height: 250px;
-    right: 0px;
+    right: -60px;
     top: 50px;
 
     background: linear-gradient(
@@ -120,7 +133,7 @@
     position: absolute;
     width: 600px;
     height: 250px;
-    right: 90px;
+    right: 30px;
     top: 250px;
 
     background: linear-gradient(
@@ -137,7 +150,7 @@
     position: absolute;
     width: 200px;
     height: 250px;
-    right: 290px;
+    right: 230px;
     top: 400px;
 
     background: linear-gradient(
@@ -203,6 +216,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .hero--img {
+    margin-right: -135px !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .hero {
     display: flex;
@@ -211,17 +230,17 @@
     .blur--bg3 {
       top: 1000px;
       width: 150px;
-      right: 300px;
+      right: 400px;
     }
     .blur--bg2 {
       top: 800px;
       width: 500px;
-      right: 110px;
+      right: 210px;
     }
     .blur--bg1 {
       top: 600px;
       width: 600px;
-      right: 40px;
+      right: 140px;
     }
     .blur--bg {
       top: 300px;
@@ -231,6 +250,9 @@
     .hero--img {
       padding-top: 40px;
     }
+    .blur--bg--left {
+      top: -50px;
+    }
   }
 }
 
@@ -238,6 +260,26 @@
   .hero {
     h1 {
       width: fit-content;
+    }
+
+    .blur--bg3 {
+      top: 1000px;
+      width: 150px;
+      right: 350px;
+    }
+    .blur--bg2 {
+      top: 800px;
+      width: 500px;
+      right: 160px;
+    }
+    .blur--bg1 {
+      top: 600px;
+      width: 600px;
+      right: 100px;
+    }
+    .blur--bg {
+      top: 300px;
+      width: 1200px;
     }
   }
 }
@@ -249,6 +291,10 @@
       max-width: fit-content;
     }
 
+    .blur--bg--left {
+      top: 50px;
+    }
+
     .hero--img {
       padding-top: 40px;
       margin-right: -1px;
@@ -256,17 +302,19 @@
     }
 
     .blur--bg3 {
-      display: none;
+      top: 900px;
+      width: 50px;
+      right: 100px;
     }
     .blur--bg2 {
       top: 800px;
-      width: 500px;
-      right: 700px;
+      width: 100px;
+      right: 170px;
     }
     .blur--bg1 {
-      top: 800px;
-      width: 200px;
-      right: 40px;
+      top: 600px;
+      width: 150px;
+      right: 100px;
     }
     .blur--bg {
       top: 100px;
