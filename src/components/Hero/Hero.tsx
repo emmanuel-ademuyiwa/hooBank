@@ -29,7 +29,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <h1>Payment Method.</h1>
+          <h1 className="payment--text">Payment Method.</h1>
         </div>
 
         <p className="hero--desc">
