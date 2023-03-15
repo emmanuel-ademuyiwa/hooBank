@@ -1,7 +1,5 @@
 import React from "react";
-import LOGO from "../../assets/logo.svg";
-import MENU from "../../assets/menu.svg";
-import Button from "../Button/Button";
+import { logo, menu } from "../../assets";
 
 const Navbar = () => {
   return (
@@ -9,7 +7,7 @@ const Navbar = () => {
       <div className="logo--nav--container">
         <div className="logo--nav">
           <div className="logo--container">
-            <img src={LOGO} alt="logo icon" />
+            <img src={logo} alt="logo icon" />
           </div>
 
           <div className="link--container">
@@ -22,11 +20,11 @@ const Navbar = () => {
           </div>
         </div>
 
-        <Button />
+        {/* <Button /> */}
       </div>
 
       <div className="mobile--menu">
-        <img src={MENU} alt="mobile menu" />
+        <img src={menu} alt="mobile menu" />
       </div>
     </div>
   );

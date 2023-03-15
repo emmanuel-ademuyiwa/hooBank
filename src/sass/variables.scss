@@ -1,3 +1,24 @@
 $grey: rgba(255, 255, 255, 0.7);
 $white: #ffffff;
 $black: #00040f;
+$linearGradient: linear-gradient(
+  157.81deg,
+  #def9fa -43.27%,
+  #bef3f5 -21.24%,
+  #9dedf0 12.19%,
+  #7de7eb 29.82%,
+  #5ce1e6 51.94%,
+  #33bbcf 90.29%
+);
+
+$linear-gradient-border: linear-gradient(#00040f 0 0) padding-box,
+  linear-gradient(
+      157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%
+    )
+    border-box;

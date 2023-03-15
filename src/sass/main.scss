@@ -5,31 +5,40 @@
 @import "./Navbar/navbar";
 //Button
 @import "./Button/button";
+//Hero
+@import "./Hero/hero";
+
+html {
+  background: #00040f;
+}
 
 body {
   padding: 0;
   margin: 0;
-  background: #00040f;
   font-family: "Poppins", sans-serif;
+  background: #00040f;
 
   .app {
     padding: 0 64px;
+    overflow: hidden;
+    background: #00040f;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
+      margin: 0;
+    }
   }
 
   @media screen and (max-width: 765px) {
     .app {
       padding: 0 24px;
+      background: #00040f;
     }
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span {
-  margin: 0;
 }
