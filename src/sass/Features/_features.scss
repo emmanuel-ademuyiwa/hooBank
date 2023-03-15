@@ -1,0 +1,122 @@
+@import "../variables.scss";
+
+.features {
+  padding: 140px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .feature--text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h1 {
+      max-width: 622px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 160%;
+      letter-spacing: 0.01em;
+      color: $white;
+    }
+    p {
+      max-width: 570px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+      letter-spacing: 0.01em;
+      color: $grey;
+      padding-bottom: 20px;
+    }
+  }
+
+  .feature--card--container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .feature--card {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      width: 470px;
+      align-items: center;
+      transition: 0.3s ease;
+
+      .img--container {
+        width: 64px;
+        height: 64px;
+        padding: 16px;
+        background: #09977c1a;
+        border-radius: 64px;
+
+        img {
+          max-width: 38.4px;
+          max-height: 38.4px;
+        }
+      }
+
+      .card--details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        h6 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 130%;
+          letter-spacing: 0.01em;
+          color: $white;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $grey;
+          width: 366px;
+        }
+      }
+
+      &:hover {
+        background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+        box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+        border-radius: 20px;
+        transform: scale(1.09);
+        transition: 0.3s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    .feature--text {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .features {
+    flex-direction: column;
+    gap: 64px;
+
+    .feature--card {
+      width: 100% !important;
+
+      p {
+        width: 100% !important;
+      }
+    }
+    .feature--text {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}

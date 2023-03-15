@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CompanyInfo from "./components/CompanyInfo/CompanyInfo";
+import Features from "./components/Features/Features";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <CompanyInfo />
+      <Features />
     </div>
   );
 }
