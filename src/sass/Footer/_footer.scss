@@ -1,0 +1,126 @@
+@import "../variables.scss";
+
+.footer {
+  margin-top: 80px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .footer--details {
+    display: flex;
+    width: 100%;
+    gap: 139px;
+
+    .footer--logo--container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 312px;
+
+      .img--container {
+        width: 266px;
+        height: 72px;
+
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: $grey;
+      }
+    }
+
+    .footer--inner--details {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .inner--details {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: left;
+
+        h6 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 150%;
+          color: $white;
+          text-transform: capitalize;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $grey;
+            padding-bottom: 12px;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+              color: #33bbcf;
+              transition: 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer--links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px solid #3f3e45;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $grey;
+      cursor: pointer;
+
+      span {
+        font-family: "Abel", sans-serif;
+      }
+    }
+
+    .icon--container {
+      display: flex;
+      width: 176px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    .footer--details {
+      flex-direction: column;
+      gap: 40px;
+      flex-wrap: wrap;
+
+      .footer--inner--details {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+
+        .inner--details {
+          flex: 1 1 135px;
+          max-width: 176px;
+        }
+      }
+    }
+  }
+}
