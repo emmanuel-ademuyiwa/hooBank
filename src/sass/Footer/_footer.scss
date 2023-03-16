@@ -124,3 +124,13 @@
     }
   }
 }
+
+@media screen and (max-width: 540px) {
+  .footer {
+    .footer--links {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+    }
+  }
+}
