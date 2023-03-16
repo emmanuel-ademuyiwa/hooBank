@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .features {
-  padding: 140px 0;
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
 
@@ -93,6 +93,7 @@
 @media screen and (max-width: 768px) {
   .features {
     flex-direction: column;
+    padding-bottom: 40px;
     .feature--text {
       h1 {
         font-size: 40px;
