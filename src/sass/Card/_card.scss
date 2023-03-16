@@ -1,20 +1,21 @@
 @import "../variables.scss";
 
-.product {
+.the--card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 80px;
 
   .img--container {
-    width: 100%;
+    width: 40%;
     max-width: 50%;
+
     img {
       width: 100%;
     }
   }
 
-  .product--details {
+  .card--details {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -26,7 +27,7 @@
       line-height: 160%;
       letter-spacing: 0.01em;
       color: $white;
-      max-width: 470px;
+      max-width: 570px;
     }
 
     p {
@@ -42,8 +43,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .product {
-    .product--details {
+  .the--card {
+    .img--container {
+      width: 45%;
+      max-width: 100%;
+    }
+    .card--details {
       h1 {
         font-size: 40px;
         max-width: 400px;
@@ -56,8 +61,8 @@
 }
 
 @media screen and (max-width: 912px) {
-  .product {
-    flex-direction: column-reverse;
+  .the--card {
+    flex-direction: column;
     gap: 80px;
     padding-bottom: 40px;
 
@@ -66,7 +71,7 @@
       max-width: 100%;
     }
 
-    .product--details {
+    .card--details {
       display: flex;
       flex-direction: column;
       gap: 20px;

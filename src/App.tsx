@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CompanyInfo from "./components/CompanyInfo/CompanyInfo";
 import Features from "./components/Features/Features";
 import Product from "./components/Product/Product";
+import Cards from "./components/Cards/Cards";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CompanyInfo />
       <Features />
       <Product />
+      <Cards />
     </div>
   );
 }
