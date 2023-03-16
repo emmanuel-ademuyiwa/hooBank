@@ -6,6 +6,8 @@ import CompanyInfo from "./components/CompanyInfo/CompanyInfo";
 import Features from "./components/Features/Features";
 import Product from "./components/Product/Product";
 import Cards from "./components/Cards/Cards";
+import Clients from "./components/Clients/Clients";
+import CallToAction from "./components/CallToAction/CallToAction";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Features />
       <Product />
       <Cards />
+      <Clients />
+      <CallToAction />
     </div>
   );
 }

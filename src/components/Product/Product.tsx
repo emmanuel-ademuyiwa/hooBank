@@ -19,6 +19,7 @@ const Product = () => {
           <img src={google} alt="google icon" />
         </div>
       </div>
+      <div className="blur--bg--left"></div>
     </div>
   );
 };

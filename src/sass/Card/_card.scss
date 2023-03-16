@@ -75,6 +75,36 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      min-width: 100%;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 48px;
+        min-width: 610px;
+      }
+
+      p {
+        width: 470px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .the--card {
+    flex-direction: column;
+    gap: 80px;
+    padding-bottom: 40px;
+
+    .img--container {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .card--details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       max-width: 100%;
 
       h1 {
