@@ -1,7 +1,9 @@
-import React from "react";
-import { logo, menu } from "../../assets";
+import React, { useState } from "react";
+import { close, logo, menu } from "../../assets";
 
 const Navbar = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="nav--bar">
       <div className="logo--nav--container">
@@ -19,12 +21,21 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-
-        {/* <Button /> */}
       </div>
 
-      <div className="mobile--menu">
-        <img src={menu} alt="mobile menu" />
+      <div className="mobile--menu" onClick={() => setModal(!modal)}>
+        {modal ? (
+          <img src={close} alt="mobile menu" />
+        ) : (
+          <img src={menu} alt="mobile menu" />
+        )}
+      </div>
+
+      <div className={modal ? "mobile--nav" : "close--modal"}>
+        <p>Home</p>
+        <p>features</p>
+        <p>product</p>
+        <p>client</p>
       </div>
     </div>
   );
