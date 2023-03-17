@@ -4,7 +4,7 @@ import { star, shield, send } from "../../assets";
 
 const Features = () => {
   return (
-    <div className="features">
+    <div id="features" className="features">
       <div className="feature--text">
         <h1>You do the business, we’ll handle the money.</h1>
         <p>

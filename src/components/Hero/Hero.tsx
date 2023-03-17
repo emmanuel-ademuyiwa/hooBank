@@ -3,7 +3,7 @@ import { discount, arrowUp, robot } from "../../assets";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="hero" className="hero">
       <div className="hero--text">
         <div className="discount--container">
           <img src={discount} alt="discount icon" />

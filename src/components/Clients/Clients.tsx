@@ -3,7 +3,7 @@ import { people01, people02, people03, quotes } from "../../assets";
 
 const Clients = () => {
   return (
-    <div className="clients">
+    <div id="client" className="clients">
       <div className="top--text">
         <h1>What people are saying about us</h1>
         <p>

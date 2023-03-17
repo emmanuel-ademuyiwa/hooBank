@@ -3,7 +3,7 @@ import { bill, apple, google } from "../../assets";
 
 const Product = () => {
   return (
-    <div className="product">
+    <div id="product" className="product">
       <div className="img--container">
         <img src={bill} alt="" />
       </div>

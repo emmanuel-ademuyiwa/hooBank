@@ -80,11 +80,13 @@
 
       h1 {
         font-size: 48px;
-        min-width: 610px;
+        width: 100%;
+        max-width: 610px;
       }
 
       p {
-        width: 470px;
+        width: 100%;
+        max-width: 470px;
       }
     }
   }

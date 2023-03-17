@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { close, logo, menu } from "../../assets";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [modal, setModal] = useState(false);
+  const closeModal = () => setModal(!modal);
 
   return (
     <div className="nav--bar">
@@ -14,16 +16,57 @@ const Navbar = () => {
 
           <div className="link--container">
             <ul>
-              <li className="active--link">home</li>
-              <li>features</li>
-              <li>product</li>
-              <li>client</li>
+              <li>
+                <Link
+                  className="active--link"
+                  to="hero"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="features"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  features
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="product"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  product
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="client"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  client
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="mobile--menu" onClick={() => setModal(!modal)}>
+      <div className="mobile--menu" onClick={closeModal}>
         {modal ? (
           <img src={close} alt="mobile menu" />
         ) : (
@@ -32,10 +75,53 @@ const Navbar = () => {
       </div>
 
       <div className={modal ? "mobile--nav" : "close--modal"}>
-        <p>Home</p>
-        <p>features</p>
-        <p>product</p>
-        <p>client</p>
+        <p>
+          <Link
+            to="hero"
+            smooth={true}
+            offset={-150}
+            duration={500}
+            onClick={closeModal}
+          >
+            home
+          </Link>
+        </p>
+        <p>
+          <Link
+            to="features"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={closeModal}
+          >
+            features
+          </Link>
+        </p>
+        <p>
+          <Link
+            to="product"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={closeModal}
+          >
+            product
+          </Link>
+        </p>
+        <p>
+          <Link
+            to="client"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={closeModal}
+          >
+            client
+          </Link>
+        </p>
       </div>
     </div>
   );
