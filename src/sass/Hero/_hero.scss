@@ -42,7 +42,6 @@
       .top--text--flex {
         margin: 0;
         display: flex;
-        // justify-content: space-between;
         align-items: center;
         gap: 50px;
       }
@@ -104,8 +103,8 @@
     position: absolute;
     width: 578px;
     height: 571px;
-    right: -100px;
-    top: -140px;
+    right: -120px;
+    top: -120px;
 
     background: linear-gradient(
       180deg,
@@ -113,8 +112,8 @@
       #214d76 100%
     );
     border: 1px solid #000000;
-    filter: blur(71.5px);
-    transform: rotate(50.46deg);
+    filter: blur(81.5px);
+    transform: rotate(60.46deg);
   }
 
   .hero--img {
@@ -176,53 +175,10 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .hero {
-    .blur--bg {
-      right: -80px;
-      top: -150px;
-    }
-    .blur--bg1 {
-      right: -100px;
-      top: -40px;
-    }
-
-    .blur--bg2 {
-      right: 0px;
-      top: 100px;
-    }
-
-    .blur--bg3 {
-      // right: 160px;
-      // top: 250px;
-    }
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .hero {
     display: flex;
     flex-direction: column;
-
-    .blur--bg3 {
-      top: 1000px;
-      width: 150px;
-      right: 400px;
-    }
-    .blur--bg2 {
-      top: 800px;
-      width: 500px;
-      right: 210px;
-    }
-    .blur--bg1 {
-      top: 600px;
-      width: 600px;
-      right: 140px;
-    }
-    .blur--bg {
-      top: 300px;
-      width: 1200px;
-    }
 
     .hero--img {
       padding-top: 40px;
@@ -248,26 +204,6 @@
         width: 130% !important;
         margin-left: -100px !important;
       }
-    }
-
-    .blur--bg3 {
-      top: 1000px;
-      width: 150px;
-      right: 350px;
-    }
-    .blur--bg2 {
-      top: 800px;
-      width: 500px;
-      right: 160px;
-    }
-    .blur--bg1 {
-      top: 600px;
-      width: 600px;
-      right: 100px;
-    }
-    .blur--bg {
-      top: 300px;
-      width: 1200px;
     }
   }
 }
@@ -299,26 +235,6 @@
         margin-left: -30px !important;
       }
     }
-
-    .blur--bg3 {
-      top: 1000px;
-      width: 150px;
-      right: 300px;
-    }
-    .blur--bg2 {
-      top: 800px;
-      width: 500px;
-      right: 110px;
-    }
-    .blur--bg1 {
-      top: 600px;
-      width: 600px;
-      right: 40px;
-    }
-    .blur--bg {
-      top: 300px;
-      width: 1200px;
-    }
   }
 }
 
@@ -343,20 +259,6 @@
       top: 900px;
       width: 50px;
       right: 100px;
-    }
-    .blur--bg2 {
-      top: 800px;
-      width: 100px;
-      right: 170px;
-    }
-    .blur--bg1 {
-      top: 600px;
-      width: 150px;
-      right: 100px;
-    }
-    .blur--bg {
-      top: 100px;
-      width: 1200px;
     }
   }
 }
